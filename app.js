@@ -9,7 +9,7 @@ let h2 = document.querySelector("h2");
 document.addEventListener("keypress", function (){
     if(started == false)
     {
-        console.log("game started");
+        // console.log("game started");
         started = true;
         levelUp();
     }
@@ -23,7 +23,7 @@ function levelUp(){
     let randColor = btns[randIdx];
     let randBtn = document.querySelector(`.${randColor}`)
     gameSeq.push(randColor);
-    console.log("Game Sequence = ", gameSeq);
+    // console.log("Game Sequence = ", gameSeq);
     btnFlash(randBtn);
 }
 
@@ -51,7 +51,7 @@ function btnPress(){
     userFlash(btn);
     userColor = btn.getAttribute("id");
     userSeq.push(userColor);
-    console.log("User Sequence = ", userSeq);
+    // console.log("User Sequence = ", userSeq);
     check(userSeq.length-1);
 }
 
